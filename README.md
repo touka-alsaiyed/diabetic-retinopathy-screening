@@ -1,1 +1,1 @@
-# iabetic-retinopathy-screening
+# diabetic-retinopathy-screening
