@@ -19,7 +19,7 @@ doctors in early diagnosis.
 ## Approach
 
 - **Datasets:** APTOS 2015 and APTOS 2019 (Kaggle), combined via two-stage transfer learning.
-- **Preprocessing:** crop-from-gray (removes the black border around the fundus), resize, and a
+- **Preprocessing:** removes the black border around the fundus, resize, and a
   Gaussian-blur weighted-blend sharpening filter to bring out vessels, hemorrhages, and
   microaneurysms. Offline data augmentation addresses class imbalance in the minority grades.
 - **Model:** EfficientNetB6, pretrained on 2015, then fine-tuned on 2019.
