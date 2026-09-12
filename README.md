@@ -72,8 +72,7 @@ no external Grad-CAM library:
    matplotlib's `jet` colormap, and alpha-blended (`alpha=0.4`) over the original RGB fundus
    image.
 6. **Demo selection:** for each of the 5 classes, the notebook picks the validation image with
-   the *highest-confidence correct prediction* for that class, then runs Grad-CAM on it — so the
-   examples shown are the model's most confident correct calls per class, not random samples.
+   the *highest-confidence correct prediction* for that class, then runs Grad-CAM on it.
 
 ## Results
 
