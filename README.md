@@ -44,11 +44,11 @@ doctors in early diagnosis.
 
 | Before | After |
 |---|---|
-| ![Raw fundus photo before preprocessing](assets/before_preprocessing.png) | ![Fundus photo after crop, resize, and sharpening](assets/after_preprocessing.jpeg) |
+| ![Raw fundus photo before preprocessing](DR_screening/assets/before_preprocessing.png) | ![Fundus photo after crop, resize, and sharpening](DR_screening/assets/after_preprocessing.jpeg) |
 
 **Grad-CAM explainability**
 
-![Grad-CAM on a Mild DR example: original fundus image, raw Grad-CAM heatmap, and the heatmap overlaid on the original — predicted Mild with 93.5% confidence](assets/gradcam_example.png)
+![Grad-CAM on a Mild DR example: original fundus image, raw Grad-CAM heatmap, and the heatmap overlaid on the original — predicted Mild with 93.5% confidence](DR_screening/assets/gradcam_example.png)
 
 ### How Grad-CAM is implemented
 
@@ -77,7 +77,7 @@ no external Grad-CAM library:
 
 ## Results
 
-![Validation classification report on APTOS 2019: 0.85 accuracy, 0.85 macro F1, 0.93 quadratic weighted kappa](assets/classification_report.png)
+![Validation classification report on APTOS 2019: 0.85 accuracy, 0.85 macro F1, 0.93 quadratic weighted kappa](DR_screening/assets/classification_report.png)
 
 | Metric | Score |
 |---|---|
@@ -85,22 +85,3 @@ no external Grad-CAM library:
 | Test Accuracy | 0.85 |
 | Macro F1-score | 0.85 |
 
-## Repository structure
-
-```
-DR_screening/
-├── Data_preprossing/
-│   ├── 01_preprocessing_2015.ipynb   # reproducible preprocessing + offline class balancing (2015)
-│   └── 02_preprocessing_2019.ipynb   # same pipeline, applied to APTOS 2019
-└── Training_notebook/
-    └── DR_Screening_final.ipynb      # original training + Grad-CAM notebook (being refactored
-                                       # to match the current preprocessing pipeline and to use a
-                                       # kappa-optimized regression approach instead of softmax
-                                       # classification)
-```
-
-## Team
-
-Part of a joint capstone project (AI Engineering) covering DR, Keratoconus, and Glaucoma
-screening, deployed through a shared web interface. DR and Keratoconus modeling: Touka Alsaiyed
-and Sabah Aljajeh. Glaucoma modeling: Efe Omer Guler and Emircan Cankara. Deployment: Nese Nur Bas.
