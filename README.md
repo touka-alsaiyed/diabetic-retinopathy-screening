@@ -52,8 +52,7 @@ doctors in early diagnosis.
 
 ### How Grad-CAM is implemented
 
-The notebook implements Grad-CAM (Selvaraju et al., 2017) directly with `tf.GradientTape` —
-no external Grad-CAM library:
+The notebook implements Grad-CAM  directly with `tf.GradientTape` :
 
 1. **Target layer:** the last convolutional feature map in the EfficientNetB6 backbone,
    `top_conv` (found via a helper that falls back to scanning backwards for the last `Conv2D`
