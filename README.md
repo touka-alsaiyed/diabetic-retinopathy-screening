@@ -48,7 +48,7 @@ doctors in early diagnosis.
 
 **Grad-CAM explainability**
 
-![Grad-CAM on a Mild DR example: original fundus image, raw Grad-CAM heatmap, and the heatmap overlaid on the original — predicted Mild with 93.5% confidence](DR_screening/assets/gradcam_example.png)
+![Grad-CAM on a Mild DR example: original fundus image, raw Grad-CAM heatmap, and the heatmap overlaid on the original — predicted Mild with 93.5% confidence](DR_screening/assets/gradcam.png)
 
 ### How Grad-CAM is implemented
 
@@ -74,12 +74,12 @@ The notebook implements Grad-CAM  directly with `tf.GradientTape` :
    the *highest-confidence correct prediction* for that class, then runs Grad-CAM on it.
 
 ## Results
-
-![Validation classification report on APTOS 2019: 0.85 accuracy, 0.85 macro F1, 0.93 quadratic weighted kappa](DR_screening/assets/classification_report.png)
+![Validation classification report on APTOS 2015:](DR_screening/assets/classification_report_2015.png)
+![Validation classification report on APTOS 2019:](DR_screening/assets/classification_report_2019.png)
 
 | Metric | Score |
 |---|---|
-| Quadratic Weighted Kappa | 0.93 |
-| Test Accuracy | 0.85 |
-| Macro F1-score | 0.85 |
+| Quadratic Weighted Kappa | 0.90 |
+| Test Accuracy | 0.84 |
+| Macro F1-score | 0.71 |
 
